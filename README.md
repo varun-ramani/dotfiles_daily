@@ -8,4 +8,4 @@ My current configuration.
 * feh
 * ranger
 * termite
-
+* playerctl

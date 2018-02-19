@@ -1,0 +1,23 @@
+#!/usr/bin/zsh
+lowerVol() {
+	amixer -D pulse sset Master 2%- >> /dev/null
+}
+raiseVol() {
+	amixer -D pulse sset Master 2%+ >> /dev/null
+}
+play() {
+	playerctl play
+}
+pause() {
+	playerctl pause
+}
+play-pause() {
+	playerctl play-pause
+}
+next() {
+	playerctl next
+}
+previous() {
+	playerctl previous
+}
+$1

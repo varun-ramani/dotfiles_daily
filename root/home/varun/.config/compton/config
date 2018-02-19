@@ -35,7 +35,7 @@ shadow-blue = 0.7;		# Blue color value of shadow. (0.0 - 1.0, defaults to 0)
 
 menu-opacity = 1;			# The opacity for menus. (default 1.0)
 inactive-opacity = 0.7;			# Opacity of inactive windows. (0.1 - 1.0)
-active-opacity = 0.9;
+active-opacity = 1.0;
 frame-opacity = 0.9;			# Opacity of window titlebars and borders. (0.1 - 1.0)
 inactive-opacity-override = false;	# Inactive opacity set by 'inactive-opacity' overrides value of _NET_WM_OPACITY.
 fade-exclude = [ "name *= 'i3lock'"];

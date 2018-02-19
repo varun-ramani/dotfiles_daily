@@ -5,10 +5,5 @@ shtdn() {
 lock() {
 	pkill -u ${USER}
 }
-lowerVol() {
-	amixer -D pulse sset Master 2%- >> /dev/null
-}
-raiseVol() {
-	amixer -D pulse sset Master 2%+ >> /dev/null
-}
+
 $1

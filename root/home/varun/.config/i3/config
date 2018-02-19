@@ -50,7 +50,7 @@ bindsym $mod+Shift+k move up
 bindsym $mod+Shift+l move right
 
 # split in horizontal orientation
-bindsym $mod+h split h
+bindsym $mod+semicolon split h
 
 # split in vertical orientation
 bindsym $mod+v split v 
@@ -140,7 +140,7 @@ bindsym $mod+Return exec termite
 exec xinput --set-prop 14 277 1
 
 #Setup i3-gaps
-gaps inner 0
+gaps inner 9
 gaps outer 0
 smart_borders on 
 new_window 1pixel
@@ -150,17 +150,14 @@ exec_always --no-startup-id feh --bg-scale ~/Pictures/Wallpaper/selected.jpg
 exec_always --no-startup-id compton --config ~/.config/compton/config
 
 #Start bar
-exec_always ~/.config/lemonbar/launch.sh
-
-#Lock and kill Xorg
-bindsym $mod+l exec "~/.config/i3/i3lock/lock.sh"
-bindsym $mod+Shift+Delete exec "sysctrl lock"
-bindsym $mod+Alt+Space exec "sysctrl shtdn"
+exec_always "polybar varunbar"
 
 #Launch apps
 bindsym $mod+d exec "rofi -show run"
 
 #Multimedia Keys
-bindsym XF86AudioRaiseVolume exec "sysctrl raiseVol"
-bindsym XF86AudioLowerVolume exec "sysctrl lowerVol"
-
+bindsym XF86AudioRaiseVolume exec "mmctrl raiseVol"
+bindsym XF86AudioLowerVolume exec "mmctrl lowerVol"
+bindsym XF86AudioPlay exec "mmctrl play-pause"
+bindsym XF86AudioNext exec "mmctrl next"
+bindsym XF86AudioPrev exec "mmctrl previous"
