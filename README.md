@@ -9,3 +9,7 @@ My current configuration.
 * ranger
 * termite
 * playerctl
+* dunst
+* polybar
+* alsa-utils
+* pulseaudio
