@@ -5,5 +5,17 @@ shtdn() {
 lock() {
 	pkill -u ${USER}
 }
+brightness_increase() {
+	xbacklight +5 -time 1
+}
+brightness_decrease() {
+	xbacklight -5 -time 1
+}
+brightness_zero() {
+	xbacklight -set 0 -time 0
+}
+brightness_full() {
+	xbacklight -set 100 -time 0
+}
 
 $1

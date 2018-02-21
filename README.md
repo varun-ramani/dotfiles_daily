@@ -13,3 +13,4 @@ My current configuration.
 * polybar
 * alsa-utils
 * pulseaudio
+* xbacklight

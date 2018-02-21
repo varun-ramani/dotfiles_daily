@@ -131,33 +131,38 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-#This is where the rice begins
+# This is where the rice begins
 
-#Start terminal
+# Start terminal
 bindsym $mod+Return exec termite
 
-#Setup tap-to-click
+# Setup tap-to-click
 exec xinput --set-prop 14 277 1
 
-#Setup i3-gaps
-gaps inner 9
+# Setup i3-gaps
+gaps inner 20
 gaps outer 0
 smart_borders on 
-new_window 1pixel
+new_window 1pixel 
 
-#Wallpaper and Compositing
+# Wallpaper and Compositing
 exec_always --no-startup-id feh --bg-scale ~/Pictures/Wallpaper/selected.jpg
 exec_always --no-startup-id compton --config ~/.config/compton/config
 
-#Start bar
+# Start bar
 exec_always "polybar varunbar"
 
-#Launch apps
+# Launch apps
 bindsym $mod+d exec "rofi -show drun"
 
-#Multimedia Keys
+# Multimedia Keys
 bindsym XF86AudioRaiseVolume exec "mmctrl raiseVol"
 bindsym XF86AudioLowerVolume exec "mmctrl lowerVol"
 bindsym XF86AudioPlay exec "mmctrl play-pause"
 bindsym XF86AudioNext exec "mmctrl next"
 bindsym XF86AudioPrev exec "mmctrl previous"
+
+# Screen Brightness
+bindsym XF86MonBrightnessUp exec "sysctrl brightness_increase"
+bindsym XF86MonBrightnessDown exec "sysctrl brightness_decrease"
+
