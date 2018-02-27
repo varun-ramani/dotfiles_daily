@@ -140,7 +140,7 @@ bindsym $mod+Return exec termite
 exec xinput --set-prop 14 277 1
 
 # Setup i3-gaps
-gaps inner 20
+gaps inner 5
 gaps outer 0
 smart_borders on 
 new_window 1pixel 
