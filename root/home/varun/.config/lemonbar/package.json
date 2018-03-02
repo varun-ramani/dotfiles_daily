@@ -1,0 +1,16 @@
+{
+  "name": "varun-lemonbar",
+  "version": "1.0.0",
+  "description": "",
+  "main": "bar.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Varun Ramani",
+  "license": "ISC",
+  "dependencies": {
+    "moment": "^2.20.1",
+    "shelljs": "^0.8.1",
+    "sleep": "^5.1.1"
+  }
+}
