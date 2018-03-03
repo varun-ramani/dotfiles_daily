@@ -2,7 +2,6 @@
 font = FuraMono Nerd Font 14
 
 [colors]
-
 # special
 foreground      = #ffffff
 foreground_bold = #ffffff
@@ -14,8 +13,8 @@ color0  = #1d1d1d
 color8  = #4d4d4d
 
 # red
-color1  = #cc0403
-color9  = #3e0605
+color1  = #740201
+color9  = #ff0000
 
 # green
 color2  = #19cb00

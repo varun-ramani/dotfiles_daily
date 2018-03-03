@@ -30,7 +30,9 @@ You can use YAOURT to install the packages using `yaourt -S <package`.
 * xbacklight
 * nodejs
 * zsh
-
+* i3lock-color
+* automake (necessary for i3lock-color)
+* autoconf (necessary for i3lock-color)
 ## Installing other necessary software:
 ### OH-MY-ZSH
 In order to get the ZSH theme working like I have it, you are going to want 
