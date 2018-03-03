@@ -60,6 +60,9 @@ ZSH_THEME="agnoster"
 plugins=(
   git
   z
+  zsh-autosuggestions
+  colorize
+  extract
 )
 
 source $ZSH/oh-my-zsh.sh
