@@ -140,10 +140,10 @@ bindsym $mod+Return exec termite
 exec xinput --set-prop 14 277 1
 
 # Setup i3-gaps
-gaps inner 5
+gaps inner 10
 gaps outer 0
-smart_borders on 
-new_window 1pixel 
+smart_borders no_gaps 
+new_window none 
 
 # Wallpaper and Compositing
 exec_always --no-startup-id feh --bg-scale ~/Pictures/Wallpaper/selected.jpg
