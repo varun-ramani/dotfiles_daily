@@ -137,16 +137,17 @@ bindsym $mod+r mode "resize"
 bindsym $mod+Return exec termite
 
 # Setup tap-to-click
-exec xinput --set-prop 14 277 1
+exec xinput --set-prop 14 279 1
 
 # Setup i3-gaps
-gaps inner 10
-gaps outer 0
-smart_borders no_gaps 
-new_window none 
+gaps inner 0
+gaps outer 20
+# smart_borders on
+# new_window none 
+for_window [class="^.*"] border pixel 2
 
 # Wallpaper and Compositing
-exec_always --no-startup-id feh --bg-scale ~/Pictures/Wallpaper/selected.jpg
+exec_always --no-startup-id feh --bg-scale ~/Pictures/Wallpaper/selected-desktop.jpg
 exec_always --no-startup-id compton --config ~/.config/compton/config
 
 # Start bar
@@ -166,3 +167,5 @@ bindsym XF86AudioPrev exec "mmctrl previous"
 bindsym XF86MonBrightnessUp exec "sysctrl brightness_increase"
 bindsym XF86MonBrightnessDown exec "sysctrl brightness_decrease"
 
+# Set up mopidy for use with ncmpcpp
+exec_always mopidy
