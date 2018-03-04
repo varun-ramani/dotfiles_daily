@@ -36,6 +36,11 @@ You can use YAOURT to install the packages using `yaourt -S <package`.
 * nerd-fonts-complete
 * lemonbar-xft-git
 * rofi
+* alsa-lib
+* alsa-plugins
+* pulseaudio
+* pulseaudio-alsa
+* zsh-theme-powerlevel9k
 ## Installing other necessary software:
 ### OH-MY-ZSH
 In order to get the ZSH theme working like I have it, you are going to want 

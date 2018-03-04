@@ -1,12 +1,13 @@
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:$PATH
+export PATH=$HOME/.local/bin:$PATH
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="agnoster"
+ZSH_THEME="powerlevel9k/powerlevel9k"
 
 # Set list of themes to load
 # Setting this variable when ZSH_THEME=random
@@ -38,7 +39,7 @@ ZSH_THEME="agnoster"
 # ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
-# COMPLETION_WAITING_DOTS="true"
+COMPLETION_WAITING_DOTS="true"
 
 # Uncomment the following line if you want to disable marking untracked files
 # under VCS as dirty. This makes repository status check for large repositories
@@ -58,7 +59,6 @@ ZSH_THEME="agnoster"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-  git
   z
   zsh-autosuggestions
   colorize
@@ -95,3 +95,12 @@ export EDITOR='vim'
 alias vim=nvim
 alias cls="clear;ls -a"
 eval $(thefuck --alias)
+
+# Powerlevel9k configuration starts here
+POWERLEVEL9K_PROMPT_ON_NEWLINE=true
+POWERLEVEL9K_DISABLE_RPROMPT=true
+POWERLEVEL9K_PROMPT_ADD_NEWLINE=true
+POWERLEVEL9K_DIR_PATH_SEPARATOR="%f "$'\uE0BD'"  %F"
+POWERLEVEL9K_LEFT_SEGMENT_SEPARATOR='\UE0BC'
+POWERLEVEL9K_RIGHT_SEGMENT_SEPARATOR='\UE0BA'
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(user status vcs newline dir dir_writable)

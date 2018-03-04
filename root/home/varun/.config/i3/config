@@ -169,3 +169,6 @@ bindsym XF86MonBrightnessDown exec "sysctrl brightness_decrease"
 
 # Set up mopidy for use with ncmpcpp
 exec_always mopidy
+
+# Load in .Xresources
+exec_always xrdb -merge /home/varun/.Xresources
