@@ -76,7 +76,7 @@ source $ZSH/oh-my-zsh.sh
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
 
-export EDITOR='vim'
+export EDITOR='nvim'
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
@@ -95,6 +95,7 @@ export EDITOR='vim'
 alias vim=nvim
 alias cls="clear;ls -a"
 eval $(thefuck --alias)
+alias vi=nvim
 
 # Powerlevel9k configuration starts here
 POWERLEVEL9K_PROMPT_ON_NEWLINE=true

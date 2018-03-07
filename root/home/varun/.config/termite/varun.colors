@@ -1,0 +1,43 @@
+[options]
+font = FuraMono Nerd Font 14
+
+[colors]
+
+# special
+foreground      = #ffffff
+foreground_bold = #ffffff
+cursor          = #ffffff
+background      = #0c0c0c
+
+# black
+color0  = #1d1d1d
+color8  = #4d4d4d
+
+# red
+color1  = #ff0200
+color9  = #ff4949
+
+# green
+color2  = #19cb00
+color10 = #23fd00
+
+# yellow
+color3  = #cecb00
+color11 = #fffd00
+
+# blue
+color4  = #2196f3
+color12 = #4ea8d1
+
+# magenta
+color5  = #cb1ed1
+color13 = #fd28ff
+
+# cyan
+color6  = #0dcdcd
+color14 = #14ffff
+
+# white
+color7  = #e5e5e5
+color15 = #ffffff
+
