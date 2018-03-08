@@ -6,6 +6,7 @@ Plug 'dracula/vim'
 Plug 'rakr/vim-one'
 Plug 'tomasr/molokai'
 Plug 'vim-airline/vim-airline'
+Plug 'ryanoasis/vim-devicons'
 
 "" Improving Vim usability
 " Git support
@@ -20,9 +21,13 @@ Plug 'tomtom/tcomment_vim'
 Plug 'Shougo/deoplete.nvim'
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
+Plug 'alvan/vim-closetag'
+" Tags
+Plug 'majutsushi/tagbar'
 " File management
 Plug 'junegunn/fzf', { 'dir': '~/.config/nvim/plugged/fzf', 'do': './install --all' }
 Plug 'scrooloose/nerdtree'
+
 " Not sure why this plugin is here to be honest
 Plug 'tpope/vim-sensible'
 call plug#end()
@@ -58,8 +63,11 @@ let g:deoplete#enable_at_startup = 1
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<c-b>"
 let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+" Tags
+set autochdir
+set tags=tags;
+map <C-t> :TagbarToggle<CR>
 " File management
 map <C-p> :FZF<CR>
 map <C-n> :NERDTreeToggle<CR>
-
 
