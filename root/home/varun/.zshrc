@@ -7,7 +7,7 @@ export ZSH=$HOME/.oh-my-zsh
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="powerlevel9k/powerlevel9k"
+ZSH_THEME="agnoster"
 
 # Set list of themes to load
 # Setting this variable when ZSH_THEME=random
@@ -44,7 +44,7 @@ COMPLETION_WAITING_DOTS="true"
 # Uncomment the following line if you want to disable marking untracked files
 # under VCS as dirty. This makes repository status check for large repositories
 # much, much faster.
-# DISABLE_UNTRACKED_FILES_DIRTY="true"
+DISABLE_UNTRACKED_FILES_DIRTY="true"
 
 # Uncomment the following line if you want to change the command execution time
 # stamp shown in the history command output.
@@ -65,6 +65,7 @@ plugins=(
   extract
   thefuck
   zsh-syntax-highlighting
+  easyzsh
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -97,13 +98,14 @@ alias cls="clear;ls -a"
 eval $(thefuck --alias)
 alias vi=nvim
 
+
 # Powerlevel9k configuration starts here
-POWERLEVEL9K_PROMPT_ON_NEWLINE=true
-POWERLEVEL9K_DISABLE_RPROMPT=true
-POWERLEVEL9K_PROMPT_ADD_NEWLINE=true
-POWERLEVEL9K_DIR_PATH_SEPARATOR="%f "$'\uE0BD'"  %F"
-POWERLEVEL9K_LEFT_SEGMENT_SEPARATOR='\UE0BC'
-POWERLEVEL9K_RIGHT_SEGMENT_SEPARATOR='\UE0BA'
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(user status vcs newline dir dir_writable)
+# POWERLEVEL9K_PROMPT_ON_NEWLINE=true
+# POWERLEVEL9K_DISABLE_RPROMPT=true
+# POWERLEVEL9K_PROMPT_ADD_NEWLINE=true
+# POWERLEVEL9K_DIR_PATH_SEPARATOR="%f "$'\uE0BD'"  %F"
+# POWERLEVEL9K_LEFT_SEGMENT_SEPARATOR='\UE0BC'
+# POWERLEVEL9K_RIGHT_SEGMENT_SEPARATOR='\UE0BA'
+# POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(user status vcs newline dir dir_writable)
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

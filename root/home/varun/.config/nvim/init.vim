@@ -1,10 +1,12 @@
 " Installing Plugins
 call plug#begin('~/.config/nvim/plugged')
-" Beautification
-Plug 'chriskempson/base16-vim'
-Plug 'dracula/vim'
+"" Beautification
+" Colorschemes
 Plug 'rakr/vim-one'
 Plug 'tomasr/molokai'
+Plug 'rafi/awesome-vim-colorschemes'
+Plug 'chriskempson/base16-vim'
+" Other beautification
 Plug 'vim-airline/vim-airline'
 Plug 'ryanoasis/vim-devicons'
 
@@ -40,13 +42,11 @@ set shiftwidth=4
 set expandtab
 
 "" Affects the look of Vim
-" Setup basic color stuff
-let base16colorspace=256
+" Basic Color Stuff
 set termguicolors
-set t_Co=256
 " Colorscheme stuff
 set background=dark
-colorscheme base16-dracula
+colorscheme dracula
 " Airline stuff
 let g:airline_theme = 'dracula'
 let g:airline_powerline_fonts = 1
