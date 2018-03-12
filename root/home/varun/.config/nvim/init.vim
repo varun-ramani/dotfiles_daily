@@ -56,7 +56,6 @@ au Syntax * RainbowParenthesesLoadRound
 au Syntax * RainbowParenthesesLoadSquare
 au Syntax * RainbowParenthesesLoadBraces
 
-
 "" Make Vim into an epic IDE
 " Autocompletion + Snippets
 let g:deoplete#enable_at_startup = 1
@@ -70,4 +69,3 @@ map <C-t> :TagbarToggle<CR>
 " File management
 map <C-p> :FZF<CR>
 map <C-n> :NERDTreeToggle<CR>
-

@@ -1,9 +1,8 @@
 # If you come from bash you might have to change your $PATH.
-export PATH=$HOME/bin:$PATH
-export PATH=$HOME/.local/bin:$PATH
-# Path to your oh-my-zsh installation.
+export PATH=$HOME/bin:$PATH:$HOME/.local/bin:$PATH
+export JAVA_HOME=/usr/lib/jvm/java-9-jdk
 export ZSH=$HOME/.oh-my-zsh
-
+export EDITOR='nvim'
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
@@ -77,7 +76,6 @@ source $ZSH/oh-my-zsh.sh
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
 
-export EDITOR='nvim'
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
