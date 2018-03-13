@@ -5,6 +5,7 @@ call plug#begin('~/.config/nvim/plugged')
     Plug 'rakr/vim-one'
     Plug 'tomasr/molokai'
     Plug 'chriskempson/base16-vim'
+    Plug 'dracula/vim'
     " Other beautification
     Plug 'vim-airline/vim-airline'
     Plug 'vim-airline/vim-airline-themes'
@@ -20,18 +21,22 @@ call plug#begin('~/.config/nvim/plugged')
     Plug 'tomtom/tcomment_vim'
     " Autocompletion
     Plug 'Shougo/deoplete.nvim'
+    " Plug 'artur-shaik/vim-javacomplete2'
     Plug 'SirVer/ultisnips'
     Plug 'honza/vim-snippets'
     Plug 'alvan/vim-closetag'
     " Tags
     Plug 'majutsushi/tagbar'
     " File management
-    Plug 'junegunn/fzf', { 'dir': '~/.config/nvim/plugged/fzf', 'do': './install --all' }
+    Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
     Plug 'scrooloose/nerdtree'
     " Buffer management
     Plug 'chrisbra/NrrwRgn'
     Plug 'wesQ3/vim-windowswap'
-
+    " Document Writing
+    Plug 'junegunn/goyo.vim'
+    Plug 'junegunn/limelight.vim'
+    Plug 'varun-ramani/docedit.vim'
     " Not sure why this plugin is here to be honest
     Plug 'tpope/vim-sensible'
 call plug#end()
@@ -47,7 +52,7 @@ set expandtab
 set termguicolors
 " Colorscheme stuff
 set background=dark
-" colorscheme dracula
+colorscheme dracula
 " Airline stuff
 " let g:airline_theme = 'one'
 let g:airline_powerline_fonts = 1
