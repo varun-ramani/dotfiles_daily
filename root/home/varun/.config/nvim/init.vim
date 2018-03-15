@@ -1,42 +1,46 @@
 " Installing Plugins
 call plug#begin('~/.config/nvim/plugged')
     " Beautification
-    " Colorschemes
-    Plug 'rakr/vim-one'
-    Plug 'tomasr/molokai'
-    Plug 'chriskempson/base16-vim'
-    Plug 'dracula/vim'
-    " Other beautification
-    Plug 'vim-airline/vim-airline'
-    Plug 'vim-airline/vim-airline-themes'
-    Plug 'ryanoasis/vim-devicons'
+        " Colorschemes
+        Plug 'rakr/vim-one'
+        Plug 'tomasr/molokai'
+        Plug 'chriskempson/base16-vim'
+        Plug 'dracula/vim'
+        Plug 'altercation/vim-colors-solarized'
+        " Other beautification
+        Plug 'vim-airline/vim-airline'
+        Plug 'vim-airline/vim-airline-themes'
+        Plug 'ryanoasis/vim-devicons'
     "" Improving Vim usability
-    " Git support
-    Plug 'tpope/vim-fugitive'
-    Plug 'airblade/vim-gitgutter'
-    " Better text editing
-    Plug 'jiangmiao/auto-pairs'
-    Plug 'thirtythreeforty/lessspace.vim'
-    Plug 'kien/rainbow_parentheses.vim'
-    Plug 'tomtom/tcomment_vim'
-    " Autocompletion
-    Plug 'Shougo/deoplete.nvim'
-    " Plug 'artur-shaik/vim-javacomplete2'
-    Plug 'SirVer/ultisnips'
-    Plug 'honza/vim-snippets'
-    Plug 'alvan/vim-closetag'
-    " Tags
-    Plug 'majutsushi/tagbar'
-    " File management
-    Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
-    Plug 'scrooloose/nerdtree'
-    " Buffer management
-    Plug 'chrisbra/NrrwRgn'
-    Plug 'wesQ3/vim-windowswap'
+        " Git support
+        Plug 'tpope/vim-fugitive'
+        Plug 'airblade/vim-gitgutter'
+        " Better text editing
+        Plug 'jiangmiao/auto-pairs'
+        Plug 'kien/rainbow_parentheses.vim'
+        Plug 'scrooloose/nerdcommenter'
+        " Autocompletion
+        Plug 'Shougo/deoplete.nvim'
+        Plug 'davidhalter/jedi-vim'
+        Plug 'SirVer/ultisnips'
+        Plug 'honza/vim-snippets'
+        Plug 'alvan/vim-closetag'
+        " Linting
+        Plug 'w0rp/ale'
+        " Tags
+        Plug 'majutsushi/tagbar'
+        " File management
+        Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+        Plug 'scrooloose/nerdtree'
+        " Buffer management
+        Plug 'chrisbra/NrrwRgn'
+        Plug 'wesQ3/vim-windowswap'
     " Document Writing
     Plug 'junegunn/goyo.vim'
     Plug 'junegunn/limelight.vim'
-    Plug 'varun-ramani/docedit.vim'
+    Plug 'vim-pandoc/vim-pandoc'
+    Plug 'vim-pandoc/vim-pandoc-syntax'
+    " Plug 'varun-ramani/docedit.nvim'
     " Not sure why this plugin is here to be honest
     Plug 'tpope/vim-sensible'
 call plug#end()
@@ -47,14 +51,17 @@ set clipboard+=unnamedplus
 set tabstop=4
 set shiftwidth=4
 set expandtab
+let g:NERDSpaceDelims = 1
+let mapleader = ","
+
 "" Affects the look of Vim
 " Basic Color Stuff
 set termguicolors
 " Colorscheme stuff
 set background=dark
-colorscheme dracula
+colorscheme solarized
 " Airline stuff
-" let g:airline_theme = 'one'
+let g:airline_theme = 'solarized'
 let g:airline_powerline_fonts = 1
 " Nice colored braces, brackets, etc. because those are very important
 au VimEnter * RainbowParenthesesToggle
