@@ -6,7 +6,6 @@ call plug#begin('~/.config/nvim/plugged')
         Plug 'tomasr/molokai'
         Plug 'chriskempson/base16-vim'
         Plug 'dracula/vim'
-        Plug 'altercation/vim-colors-solarized'
         " Other beautification
         Plug 'vim-airline/vim-airline'
         Plug 'vim-airline/vim-airline-themes'
@@ -25,6 +24,8 @@ call plug#begin('~/.config/nvim/plugged')
         Plug 'SirVer/ultisnips'
         Plug 'honza/vim-snippets'
         Plug 'alvan/vim-closetag'
+        Plug 'leafgarland/typescript-vim'
+        Plug 'HerringtonDarkholme/yats.vim'
         " Linting
         Plug 'w0rp/ale'
         " Tags
@@ -56,12 +57,11 @@ let mapleader = ","
 
 "" Affects the look of Vim
 " Basic Color Stuff
-set termguicolors
 " Colorscheme stuff
-set background=dark
-colorscheme solarized
+set termguicolors
+colorscheme base16-solarized-dark
 " Airline stuff
-let g:airline_theme = 'solarized'
+let g:airline_theme = 'one'
 let g:airline_powerline_fonts = 1
 " Nice colored braces, brackets, etc. because those are very important
 au VimEnter * RainbowParenthesesToggle

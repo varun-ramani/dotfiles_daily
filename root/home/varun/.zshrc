@@ -64,7 +64,7 @@ plugins=(
   extract
   thefuck
   zsh-syntax-highlighting
-  easyzsh
+  easynvim
 )
 
 source $ZSH/oh-my-zsh.sh
