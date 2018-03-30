@@ -1,11 +1,2 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =9
-let g:netrw_dirhist_1='/home/varun/Documents/School/Computer_Science/ATCS/DataStructures/HashTable/PhoneBook'
-let g:netrw_dirhist_2='/home/varun/Documents/School/Computer_Science/ATCS/DataStructures/HashTable/PhoneBook/build'
-let g:netrw_dirhist_3='/home/varun/Documents/School/Computer_Science/ATCS/DataStructures/HashTable/PhoneBook'
-let g:netrw_dirhist_4='/home/varun/dotfiles/root/home/varun/.config/nvim'
-let g:netrw_dirhist_5='/home/varun/Documents/School/Computer_Science/ATCS/DataStructures/HashTable/PhoneBook'
-let g:netrw_dirhist_6='/home/varun/Documents/School/Computer_Science/ATCS/DataStructures/HashTable/PhoneBook/build'
-let g:netrw_dirhist_7='/home/varun/Documents/School/Computer_Science/ATCS/DataStructures/HashTable/PhoneBook'
-let g:netrw_dirhist_8='/home/varun/Documents/School/Computer_Science/ATCS/DataStructures/HashTable/PhoneBook/build'
-let g:netrw_dirhist_9='/home/varun/Documents/School/Computer_Science/ATCS/DataStructures/HashTable/PhoneBook'
+let g:netrw_dirhist_cnt =0

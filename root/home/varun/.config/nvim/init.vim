@@ -6,6 +6,7 @@ call plug#begin('~/.config/nvim/plugged')
         Plug 'tomasr/molokai'
         Plug 'chriskempson/base16-vim'
         Plug 'dracula/vim'
+        Plug 'NLKNguyen/papercolor-theme'
         " Other beautification
         Plug 'vim-airline/vim-airline'
         Plug 'vim-airline/vim-airline-themes'
@@ -18,6 +19,7 @@ call plug#begin('~/.config/nvim/plugged')
         Plug 'jiangmiao/auto-pairs'
         Plug 'kien/rainbow_parentheses.vim'
         Plug 'scrooloose/nerdcommenter'
+        Plug 'easymotion/vim-easymotion'
         " Autocompletion
         Plug 'Shougo/deoplete.nvim'
         Plug 'davidhalter/jedi-vim'
@@ -26,8 +28,9 @@ call plug#begin('~/.config/nvim/plugged')
         Plug 'alvan/vim-closetag'
         Plug 'leafgarland/typescript-vim'
         Plug 'HerringtonDarkholme/yats.vim'
+        Plug 'artur-shaik/vim-javacomplete2'
         " Linting
-        Plug 'w0rp/ale'
+        " Plug 'w0rp/ale'
         " Tags
         Plug 'majutsushi/tagbar'
         " File management
@@ -41,6 +44,7 @@ call plug#begin('~/.config/nvim/plugged')
     Plug 'junegunn/limelight.vim'
     Plug 'vim-pandoc/vim-pandoc'
     Plug 'vim-pandoc/vim-pandoc-syntax'
+    Plug 'donRaphaco/neotex'
     " Plug 'varun-ramani/docedit.nvim'
     " Not sure why this plugin is here to be honest
     Plug 'tpope/vim-sensible'
@@ -59,9 +63,10 @@ let mapleader = ","
 " Basic Color Stuff
 " Colorscheme stuff
 set termguicolors
-colorscheme base16-solarized-dark
+set background=dark
+colorscheme PaperColor
 " Airline stuff
-let g:airline_theme = 'one'
+let g:airline_theme = 'dracula'
 let g:airline_powerline_fonts = 1
 " Nice colored braces, brackets, etc. because those are very important
 au VimEnter * RainbowParenthesesToggle
@@ -75,6 +80,10 @@ let g:deoplete#enable_at_startup = 1
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<c-b>"
 let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+autocmd FileType java setlocal omnifunc=javacomplete#Complete
+nmap <F4> <Plug>(JavaComplete-Imports-AddSmart)
+imap <F4> <Plug>(JavaComplete-Imports-AddSmart)
+
 " Tags
 set autochdir
 set tags=tags;

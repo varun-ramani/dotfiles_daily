@@ -1,6 +1,6 @@
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:$PATH:$HOME/.local/bin:$PATH
-export JAVA_HOME=/usr/lib/jvm/java-9-jdk
+export JAVA_HOME=/usr/lib/jvm/default-jdk
 export ZSH=$HOME/.oh-my-zsh
 export EDITOR='nvim'
 # Set name of the theme to load. Optionally, if you set this to "random"
@@ -65,6 +65,7 @@ plugins=(
   thefuck
   zsh-syntax-highlighting
   easynvim
+  vi-mode
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -94,8 +95,9 @@ source $ZSH/oh-my-zsh.sh
 alias vim=nvim
 alias cls="clear;ls -a"
 eval $(thefuck --alias)
-alias vi=nvim
-
+alias vi=vim
+alias py=python
+alias py3=python3
 
 # Powerlevel9k configuration starts here
 # POWERLEVEL9K_PROMPT_ON_NEWLINE=true
