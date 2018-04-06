@@ -10,13 +10,13 @@
 # and formatting the data.
 
 #Actual configuration happens here
-MAINFONT="Fira Mono for Powerline:size=14"
+MAINFONT="SauceCodePro Nerd Font:size=15"
 ICONFONT="PowerlineSymbols:size=14"
 
 #Colors
 WHITE="#B2FFFFFF"
 BLACK="#B2000000"
-
+BLUE="#00FFFF"
 #Powerline Stuff
 HARD_SEP_LEFT=""
 LIGHT_SEP_LEFT=""

@@ -146,29 +146,31 @@ gaps outer 0
 # new_window none 
 for_window [class="^.*"] border pixel 2
 
-# Wallpaper and Compositing
-exec_always --no-startup-id feh --bg-scale ~/Pictures/Wallpaper/selected-desktop.jpg
-exec_always --no-startup-id compton --config ~/.config/compton/config
-
-# Start bar
-exec_always "polybar varunbar"
-
 # Launch apps
 bindsym $mod+d exec "rofi -show drun"
 
 # Multimedia Keys
 bindsym XF86AudioRaiseVolume exec "mmctrl raiseVol"
 bindsym XF86AudioLowerVolume exec "mmctrl lowerVol"
-bindsym XF86AudioPlay exec "mmctrl play-pause"
-bindsym XF86AudioNext exec "mmctrl next"
-bindsym XF86AudioPrev exec "mmctrl previous"
+bindsym Mod1+9 exec "mmctrl toggle"
+bindsym Mod1+0 exec "mmctrl next"
+bindsym Mod1+8 exec "mmctrl previous"
 
 # Screen Brightness
 bindsym XF86MonBrightnessUp exec "sysctrl brightness_increase"
 bindsym XF86MonBrightnessDown exec "sysctrl brightness_decrease"
 
-# Set up mopidy for use with ncmpcpp
-exec_always mopidy
+# Rotate screen
+bindsym $mod+control+k exec "xrandr --output eDP-1 --rotate normal"
+bindsym $mod+control+j exec "xrandr --output eDP-1 --rotate inverted"
+bindsym $mod+control+h exec "xrandr --output eDP-1 --rotate left"
+bindsym $mod+control+l exec "xrandr --output eDP-1 --rotate right"
+
+# Print Screen
+bindsym Print exec screenshot
 
 # Load in .Xresources
 exec_always xrdb -merge /home/varun/.Xresources
+
+# Run init script
+exec_always $HOME/.config/i3/initdesktop

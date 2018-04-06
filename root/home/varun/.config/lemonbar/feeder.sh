@@ -20,7 +20,7 @@ buildString() {
 	VOL_MODULE="${LIGHT_SEP_LEFT} VOL:${VOL_LEVEL} ${LIGHT_SEP_RIGHT}"
 	RIGHT_MODULE="${VOL_MODULE}~${BATT_MODULE}"
 
-	DATA=" %{B${WHITE} F${BLACK}} %{c} ${CENTER_MODULE} %{r} ${RIGHT_MODULE} "
+	DATA=" %{B${BLACK} F${BLUE}} %{c} ${CENTER_MODULE} %{r} ${RIGHT_MODULE} "
 }
 
 # This sends the data off to lemonbar

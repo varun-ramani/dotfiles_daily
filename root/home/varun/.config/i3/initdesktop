@@ -1,0 +1,4 @@
+mopidy & 
+feh --bg-scale ~/Pictures/Wallpaper/selected-desktop &
+compton --config ~/.config/compton/config &
+startbar

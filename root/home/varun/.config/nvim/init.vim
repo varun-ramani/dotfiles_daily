@@ -30,7 +30,7 @@ call plug#begin('~/.config/nvim/plugged')
         Plug 'HerringtonDarkholme/yats.vim'
         Plug 'artur-shaik/vim-javacomplete2'
         " Linting
-        " Plug 'w0rp/ale'
+        Plug 'w0rp/ale'
         " Tags
         Plug 'majutsushi/tagbar'
         " File management
@@ -64,9 +64,9 @@ let mapleader = ","
 " Colorscheme stuff
 set termguicolors
 set background=dark
-colorscheme PaperColor
+colorscheme molokai
 " Airline stuff
-let g:airline_theme = 'dracula'
+let g:airline_theme = 'deus'
 let g:airline_powerline_fonts = 1
 " Nice colored braces, brackets, etc. because those are very important
 au VimEnter * RainbowParenthesesToggle

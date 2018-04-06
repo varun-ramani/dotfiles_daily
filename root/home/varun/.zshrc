@@ -2,7 +2,7 @@
 export PATH=$HOME/bin:$PATH:$HOME/.local/bin:$PATH
 export JAVA_HOME=/usr/lib/jvm/default-jdk
 export ZSH=$HOME/.oh-my-zsh
-export EDITOR='nvim'
+export EDITOR='emacs'
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
