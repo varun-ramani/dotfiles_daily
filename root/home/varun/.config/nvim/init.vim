@@ -20,7 +20,7 @@ call plug#begin('~/.config/nvim/plugged')
         Plug 'kien/rainbow_parentheses.vim'
         Plug 'scrooloose/nerdcommenter'
         Plug 'easymotion/vim-easymotion'
-        " Autocompletion
+        " Autocompletion and Language Specific Features
         Plug 'Shougo/deoplete.nvim'
         Plug 'davidhalter/jedi-vim'
         Plug 'SirVer/ultisnips'
@@ -29,8 +29,9 @@ call plug#begin('~/.config/nvim/plugged')
         Plug 'leafgarland/typescript-vim'
         Plug 'HerringtonDarkholme/yats.vim'
         Plug 'artur-shaik/vim-javacomplete2'
+        Plug 'chrisbra/csv.vim'
         " Linting
-        Plug 'w0rp/ale'
+        " Plug 'w0rp/ale'
         " Tags
         Plug 'majutsushi/tagbar'
         " File management
