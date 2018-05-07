@@ -1,6 +1,7 @@
-# If you come from bash you might have to change your $PATH.
-export PATH=$HOME/bin:$PATH:$HOME/.local/bin:$PATH
-export JAVA_HOME=/usr/lib/jvm/default-jdk
+#If you come from bash you might have to change your $PATH.
+export PATH=$HOME/bin:$PATH:$HOME/.local/bin:$HOME/opt/flutter/bin:$PATH
+export JAVA_HOME=/usr/lib/jvm/default
+export ANDROID_HOME=$HOME/opt/android/sdk
 export ZSH=$HOME/.oh-my-zsh
 export EDITOR='emacs'
 # Set name of the theme to load. Optionally, if you set this to "random"
@@ -62,7 +63,6 @@ plugins=(
   zsh-autosuggestions
   colorize
   extract
-  thefuck
   zsh-syntax-highlighting
   easynvim
   vi-mode
@@ -94,7 +94,6 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias vim=nvim
 alias cls="clear;ls -a"
-eval $(thefuck --alias)
 alias vi=vim
 alias py=python
 alias py3=python3
@@ -108,4 +107,3 @@ alias py3=python3
 # POWERLEVEL9K_RIGHT_SEGMENT_SEPARATOR='\UE0BA'
 # POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(user status vcs newline dir dir_writable)
 
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

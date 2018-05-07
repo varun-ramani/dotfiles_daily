@@ -1,0 +1,1 @@
+/home/varun/dotfiles/root/home/.zshrc
