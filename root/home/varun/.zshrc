@@ -1,5 +1,5 @@
 #If you come from bash you might have to change your $PATH.
-export PATH=$HOME/bin:$PATH:$HOME/.local/bin:$HOME/opt/flutter/bin:$PATH
+export PATH=$HOME/bin:$PATH:$HOME/.local/bin:$HOME/opt/flutter/bin:$HOME/opt/android/sdk/platform-tools:$PATH
 export JAVA_HOME=/usr/lib/jvm/default
 export ANDROID_HOME=$HOME/opt/android/sdk
 export ZSH=$HOME/.oh-my-zsh
