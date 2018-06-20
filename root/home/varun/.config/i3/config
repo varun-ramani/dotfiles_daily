@@ -143,9 +143,8 @@ exec xinput --set-prop 14 279 1
 # Setup i3-gaps
 gaps inner 12
 gaps outer 0
-# smart_borders on
-# new_window none 
-for_window [class="^.*"] border pixel 2
+smart_borders on
+new_window none 
 
 # Launch apps
 bindsym $mod+d exec "rofi -show drun"
@@ -153,9 +152,9 @@ bindsym $mod+d exec "rofi -show drun"
 # Multimedia Keys
 bindsym XF86AudioRaiseVolume exec "mmctrl raiseVol"
 bindsym XF86AudioLowerVolume exec "mmctrl lowerVol"
-bindsym Mod1+9 exec "mmctrl toggle"
-bindsym Mod1+0 exec "mmctrl next"
-bindsym Mod1+8 exec "mmctrl previous"
+bindsym Mod1+9 exec "playerctl play-pause"
+bindsym Mod1+0 exec "playerctl next"
+bindsym Mod1+8 exec "playerctl previous"
 
 # Screen Brightness
 bindsym XF86MonBrightnessUp exec "sysctrl brightness_increase"
